@@ -1,0 +1,68 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-arrow {
+  width: 1.4580078125em;
+}
+
+.icon-cv {
+  width: 0.900390625em;
+}
+
+.icon-fatwa {
+  width: 1.2392578125em;
+}
+
+.icon-foooter {
+  width: 2.8798828125em;
+}
+
+.icon-header-logo {
+  width: 2.62109375em;
+}
+
+.icon-home {
+  width: 1.17578125em;
+}
+
+.icon-icons {
+  width: 0.59765625em;
+}
+
+.icon-magnify {
+  width: 0.857421875em;
+}
+
+.icon-mic {
+  width: 0.6806640625em;
+}
+
+.icon-minbar {
+  width: 0.5576171875em;
+}
+
+.icon-video {
+  width: 1.06640625em;
+}
+
+.icon-video-side {
+  width: 1.0029296875em;
+}
+
+.icon-write {
+  width: 1.1484375em;
+}

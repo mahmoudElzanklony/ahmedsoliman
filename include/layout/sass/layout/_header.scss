@@ -1,0 +1,233 @@
+/* Start Header*/
+    .header {
+
+        background-color: $color-primary;
+        grid-area: header;
+        padding: 2rem;
+        position: relative;
+
+        -webkit-box-shadow: 0px -1px 5px 3px rgba(0, 0, 0, 0.21);
+        -moz-box-shadow: 0px -1px 5px 3px rgba(0, 0, 0, 0.21);
+        box-shadow: 0px -1px 5px 3px rgba(0, 0, 0, 0.21);
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+
+        .header-logo {
+            flex: 2;
+            margin-left: 5rem;
+        }
+
+        .header-menu {
+            flex: 8;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+            grid-auto-rows: dense;
+
+            .menu-item {
+                transition: all .5s ease-in-out;
+                position: relative;
+                height: 12vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                border-right: rgba(255, 255, 255, 0.267) solid 0.51px;
+                flex-grow: 1;
+
+                &:hover svg {
+                    fill: #DFB448;
+                    color: #DFB448;
+                }
+
+                &:hover .menu-text,&:hover .main-a {
+                    color: #DFB448;
+                }
+               
+
+                &:hover .menu-text ul{
+                    
+                    @media #{$maxMobile}{
+                        display: none;
+                    }
+                     @media #{$minSmall}{
+                        display: none;
+                    }
+                    @media #{$minMedium}{
+                        display:block;
+                    }
+                }
+
+                .menu-icon {
+                    width: 2rem;
+                    color: #46EEAA;
+                    fill: currentColor;
+                }
+
+                .mic {
+                    width: 1.4rem;
+
+                }
+
+                .cv {
+                    width: 1.6rem;
+
+                }
+
+                .menu-text {
+                    font-size: 1.5rem;
+                    color: #fff;
+                    text-decoration: none;
+                    transition:all .5s ease-in-out;
+                    &:hover {
+                        color: #DFB448;
+                    }
+                    a{color:#fff;}
+                    ul{
+                        display: none;
+                        position: absolute;
+                        background-color: $color-content;
+                        padding: 10px 10px 10px 0px;
+                        text-align: right;
+                        font-size: 14px;
+                        top: 88px;
+                        width: inherit;
+                        left: 0px;
+                        right:0px;
+                        transition:all .4s ease-in-out; 
+                        box-shadow:0 1px 1px rgba($color-primary ,.5);
+                        &:before{
+                            content: '';
+                            border-left:10px solid  transparent;
+                            border-right:10px solid  transparent;
+                            border-bottom:10px solid $color-content;
+                            width: 0;
+                            height: 0;
+                            position: absolute;
+                            left:60%;
+                            top:-10px;
+                        }
+                        @media #{$maxMobile}{
+                            display:none;
+                        }
+                        @media #{$minSmall}{
+                            display:none;
+                        }
+                        @media #{$minMedium}{
+                        display:none;
+                        }
+                            a{
+                                color:$color-primary ;
+                                &:hover{
+                                    color:$color-sec;
+                                    font-weight:500;
+                                    margin-right:5px;
+                                    }
+                                }
+                    }
+                }
+
+            }
+
+        }
+
+        .toggler {
+            font-size: 3rem;
+            margin: 0 2rem 0 2rem;
+            cursor: pointer;
+            display: none;
+
+        }
+
+        #toggle {
+            cursor: pointer;
+            display: none;
+
+        }
+
+        @media screen and (max-width: 1000px) {
+
+            .toggler {
+                display: block;
+                position: absolute;
+                top: 6rem;
+                left: 2rem;
+                z-index: 10000;
+
+            }
+
+            .header-menu {
+
+
+
+                // grid-template-columns: minmax(100px , 0.25fr)  minmax(100px , 0.25fr) ;
+                //  grid-template-rows: repeat(auto-fit , 1fr) ;
+                //  justify-content: center;
+                // align-content: center;
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr;
+                background-color: $color-primary;
+                position: absolute;
+                top: 6rem;
+                left: 2rem;
+
+
+                padding-top: 13vh;
+
+                z-index: 1;
+                transform: scale(0);
+                transform-origin: top left;
+                border-radius: 1000px;
+
+
+            }
+
+            .menu-item {
+                border-right: none !important;
+                margin: 2rem;
+            }
+
+            .header-logo {
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            input#toggle:checked~.header-menu {
+                // justify-content: flex-end !important;
+                transform: scale(1);
+                transition: all 0.3s ease;
+                width: 100vw;
+                height: 100vh;
+                border-radius: 0;
+                top: 0;
+                left: 0;
+            }
+
+            input#toggle:checked~.toggler {
+                margin-top: -8rem;
+            }
+
+            input#toggle:checked~.header-menu .menu-item {
+                flex-grow: 0 !important;
+            }
+
+        }
+
+        @media screen and (max-width: 500px) {
+
+            .logo {
+                width: 200px;
+                height: 70px;
+            }
+
+            .toggler {
+                top: 3rem;
+            }
+
+        }
+
+        @media screen and (max-width: 450px) {}
+
+    }
+/*End Header*/

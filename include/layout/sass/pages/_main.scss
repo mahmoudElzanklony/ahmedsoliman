@@ -1,0 +1,264 @@
+/*************************************Start Main Page************************************/
+    .content {
+        display: grid;
+        grid-template-rows: min-content repeat(3, min-content) min-content;
+        grid-template-columns: [full-start] 1fr [left-end center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end];
+        justify-content: center;
+        align-content: center;
+        .table-title {
+            background-image: linear-gradient(#29B3BA, #46EEAA);
+            border-radius: 5rem;
+            color: white;
+            font-weight: 200;
+            padding: 0.5rem;
+            &:hover {
+                filter: brightness(110%);
+            }
+            @media (max-width: 800px) {
+                font-size: 1rem;
+                font-weight: 500;
+            }
+        }
+
+        h1 {
+
+            text-align: center;
+            margin: 2rem;
+        }
+
+        h2 {margin: 0.5rem 0 2rem 0;}
+
+        .section-head {
+            display: grid;
+            grid-template-columns: 1fr max-content 1fr;
+
+            .stroke {
+                border-bottom: 1px solid #38D2B1;
+                align-self: center;
+            }
+
+            .section-title {
+                font-weight: 300 !important;
+                color: black;
+            }
+        }
+
+
+        .table {
+            @media #{$maxMobile}{
+                grid-column: full-end / col-start 1;
+            }
+            grid-column: full-end / col-start 4;
+            grid-row: 1 / 2;
+            background-color: #D6F4F0;
+            padding: 2rem;
+            .table-font {
+                color: black;
+                text-align: right;
+            }
+            .grid-table {
+                display: grid;
+                margin: 0 auto;
+
+                align-items: top;
+                background: rgba(#D6F4F0, 0.9);
+                border-radius: 0.5rem;
+
+                @media (max-width: 800px) {
+                    background: transparent;
+                    grid-row-gap: 2rem;
+                    box-shadow: none;
+                }
+                &-row {
+                    display: grid;
+                    grid-template-columns: repeat(2, 2fr) repeat(2, 1fr);
+
+                    @media (max-width: 800px) {
+                        grid-template-columns: 3fr 1fr 3fr;
+                        background: rgba(#D6F4F0, 0.9);
+                        border-radius: 0.5rem;
+                    }
+
+                    @media (max-width: 400px) {
+                        grid-template-columns: 1fr 1fr;
+                    }
+
+                    &:not(:last-child) {
+                        border-bottom: 1px solid rgba(41, 179, 186, 0.315);
+                    }
+
+                    &:first-child {
+                        border-radius: 0.5rem 0.5rem 0 0;
+                        background: rgba(#29B3BA, 0.1);
+
+                        font-weight: bold;
+
+                        @media (max-width: 800px) {
+                            display: none;
+                        }
+                    }
+                }
+                &-cell {
+                    padding: 1rem;
+                    @media (max-width: 800px) {
+                        padding: 0 0 1rem 0;
+                        text-align: center;
+                    }
+                    &:not(:last-child) {
+                        // border-right: 1px solid #29B3BA;
+                    }
+
+                    @media (max-width: 800px) {
+                        &:before {
+                            content: attr(data-title);
+                            font-weight: bold;
+                            display: block;
+                            background: rgba(#29B3BA, 0.1);
+                            padding: 0.75rem;
+                            margin-bottom: 0.75rem;
+                            font-size: 1rem;
+                        }
+
+                        &:first-child {
+                            grid-column-start: 1;
+                            grid-column-end: 5;
+                            border-bottom: 1px solid #ddd;
+
+                            &:before {
+                                border-radius: 0.5rem 0.5rem 0 0;
+                            }
+                        }
+                    }
+                    @media (max-width: 400px) {
+                        &:last-child {
+                            grid-column-start: 1;
+                            grid-column-end: 5;
+                        }
+                    }
+                }
+            }
+        }
+        .sounds {
+            background-color: rgb(70, 87, 238);
+            padding: 2rem;
+            background-color: #FFFFFF;
+            @media #{$maxMobile}{grid-column: full-start / col-end 12;}
+            @media #{$minSmall}{ grid-column: full-start / col-end 3;}
+            h1.sound-items {
+                text-align: center;
+                margin: 1rem;
+            }
+            .sound-items {
+                color: black;
+                font-size: 1.3rem;
+                font-weight: 400 !important;
+            }
+            .sound-heading {
+                display: flex;
+                text-decoration: none;
+                justify-content: flex-end;
+            }
+
+            & a:not(:last-of-type) {
+                border-bottom: 0.5px solid rgba(41, 179, 186, 0.513);
+                padding-bottom: 1rem;
+            }
+        }
+
+        .fatwa {
+            grid-column: center-start / center-end;
+            background-color: #F2F9FF;
+            padding: 1rem;
+            .fatwa-block {
+                background-color: #fff;
+                padding: 1rem;
+                border-radius: 1rem;
+                .fatwa-content {}
+                & div:not(:last-of-type) {
+                    border-bottom: 0.5px solid rgba(41, 179, 186, 0.513);
+                    padding-bottom: 1rem;
+                }
+                .fatwa-heading {
+                    text-decoration: none;
+                    &:hover {
+                        filter: brightness(110%);
+                    }
+                    .fatwa-h-icon {
+                        width: 1.5rem;
+                        color: #46EEAA;
+                        fill: currentColor;
+                    }
+                    h1 {
+                        text-align: right;
+                        color: #46EEAA;
+                        font-size: 1.2rem;
+                        margin: 1rem !important;
+                    }
+                }
+                .fatwa-text {
+                    padding: 0 2rem;
+                    text-align: right;
+                    color: black;
+                }
+            }
+        }
+        .videos {
+            grid-column: center-start / center-end;
+            background-color: rgba(214, 244, 240, 0.418);
+            padding: 1rem;
+            .videos-block {
+                display: grid;
+                grid-gap: 3rem;
+                @media #{$maxMobile}{grid-template-columns: repeat(minmax(3.5rem, 1fr));}
+                @media #{$minSmall}{ grid-template-columns: repeat(3,minmax(3.5rem, 1fr));}
+                .video-thum {
+                    width: 100%;
+                    margin-bottom: -0.3rem;
+                }
+
+                .video-title {
+                    color: white;
+                    background-color: #00284B;
+                    text-align: right;
+                    padding: 1rem;
+                    margin: 0;
+                    font-weight: 300;
+                }
+            }
+
+        }
+        .articles {
+            grid-row-start: 5;
+            grid-column: center-start / center-end;
+            padding: 1rem;
+            .articles-block {
+                display: grid;
+                grid-gap: 3rem;
+                @media #{$maxMobile}{grid-template-columns: repeat(minmax(3.5rem, 1fr));}
+                @media #{$minSmall}{ grid-template-columns: repeat(3,minmax(3.5rem, 1fr));}
+                .featured-article {
+                    background-color: #fff;
+                    .article-title {
+                        color: white;
+                        background-color: #00284B;
+                        text-align: right;
+                        padding: 1rem;
+                        margin: 0;
+                        font-weight: 300;
+                        span .icon-article {
+                            vertical-align: middle;
+                        }
+                    }
+                    .article-text {
+                        padding: 1rem;
+                        color: #00284B;
+                        text-align: right;
+                    }
+                }
+            }
+
+
+        }
+
+
+    }

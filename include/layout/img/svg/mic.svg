@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16.168" height="23.765" viewBox="0 0 16.168 23.765">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#29b3ba"/>
+      <stop offset="1" stop-color="#46eeaa"/>
+    </linearGradient>
+  </defs>
+  <path id="ic_mic_24px" d="M13.084,17.01a3.6,3.6,0,0,0,3.453-3.752l.012-7.5A3.612,3.612,0,0,0,13.084,2,3.612,3.612,0,0,0,9.619,5.752v7.5A3.612,3.612,0,0,0,13.084,17.01ZM19.2,13.257a6.231,6.231,0,0,1-6.121,6.379,6.231,6.231,0,0,1-6.121-6.379H5a8.519,8.519,0,0,0,6.929,8.405v4.1h2.31v-4.1a8.5,8.5,0,0,0,6.929-8.405Z" transform="translate(-5 -2)" fill="url(#linear-gradient)"/>
+</svg>

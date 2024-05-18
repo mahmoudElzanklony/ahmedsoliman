@@ -1,0 +1,543 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 1, 2018, 9:31:59 PM
+    Author     : mahmoud
+*/
+
+
+body{
+   
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    float: right;
+}
+/*edit on bootstrap*/
+.carousel-inner > .item > img, .carousel-inner > .item > a > img{
+    height: 275px;
+    width: 100%;
+  
+}
+.navbar-fixed-top .navbar-nav{
+    width:100%;
+}
+.navbar-nav > li{
+    width: calc(100%/7);
+}
+.nav-stacked > li + li{
+    margin-top: 0px;
+}
+
+
+.table{
+    display: inline-table;
+}
+
+
+.error{
+    position: fixed;
+    left: 24%;
+    z-index: 99999;
+    top: 50%;
+    width: 50%;
+    font-size: 30px;
+    color: white !important;
+}
+
+
+
+.heading{
+    position: relative;
+    padding-top: 50px !important;
+    
+    
+}
+
+
+.heading .carousel-indicators li,.categories .carousel-indicators .active{
+    width: 40px;
+    height: 4px;
+    background-color: white;
+}
+.heading .carousel-indicators .active{
+    background-color: #337ab7;
+}
+.heading .carousel-indicators{
+    bottom: 0px;
+}
+.heading img{
+    height: 300px;
+    width: 100%;
+    display: block;
+    
+}
+.slides{
+    width: 90%;
+    float: left;
+    margin-left:6%;
+}
+.navbar-nav > li{
+    float: right;
+}
+@media(min-width:768px){
+    button[type='submit']{
+        margin-left: 5px;
+        padding: 6px 19px;
+    }
+    
+}
+.navbar-form .form-control{
+    width:100%;
+}
+
+.navbar-form button{
+        float: left;
+        margin-left: 0;
+        margin-right: 2%;
+        width: 17%;
+}
+.navbar-form .form-group{
+        float: right;
+        width: 80%;
+}
+.nav-pills > li > a{
+    width: 100%;
+    text-align: right;
+    font-size: 18px;
+}
+.panel-primary > .panel-heading{
+    overflow: hidden;
+}
+/*end of edit of bootstrap*/
+/*-------------------------------start of home page---------------------------------------------------*/
+/* start of navigation */
+ 
+.videos , .books , .articles , .issues{
+    display: none;
+}
+
+
+
+.icons{
+    position: fixed;
+    left: 0%;
+    top: 25%;
+    width: 5%;
+    font-size: 22px;
+    color:white;
+}
+.icons ul{
+    
+    list-style: none;
+    padding: 0px;
+}
+.icons ul li{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: .2s all;
+    
+}
+.icons ul li:hover{
+    width:100%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.icons ul li:first-of-type{
+    background-color: #0077b5;
+    border-top-right-radius: 15px;
+}
+.icons ul li:nth-of-type(2){
+     background-color: #bb1a1a;
+}
+.icons ul li:nth-of-type(3){
+   
+    background-color: #3B5998;
+}
+.icons ul li:nth-of-type(4){
+    background-color: brown;
+}
+.icons ul li:last-of-type{
+    background-color: #55acee;
+    border-bottom-right-radius: 15px;
+}
+.icons ul li svg{
+    
+}
+
+
+
+.second-navbar{
+    overflow: hidden;
+}
+.second-navbar ul{
+    overflow: hidden;
+    background-color: #607D8B;
+    color: white;
+    border-radius: 10px;
+    list-style: none;
+}
+.second-navbar ul li{
+    float: left;
+    width: 20%;
+    padding: 10px;
+    transition: 1s all;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+}
+.second-navbar ul li:hover{
+    background-color: #337ab7;
+}
+.heading .image{
+    position: absolute;
+    right:0px;
+}
+.heading .image img{
+    
+}
+
+
+
+.information .newest-audio{
+    overflow: hidden;
+}
+.information .newest-audio ul{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.information .newest-audio ul li{
+    overflow: hidden;  
+}
+.information .newest-audio ul li svg{
+    color:#6d6da0;
+    
+}
+.information .newest-audio ul li span{
+    transition: .5s all;
+}
+.information .newest-audio ul li span:nth-of-type(3) span , 
+.information .newest-audio ul li span:last-of-type span{
+    cursor: pointer;
+}
+.information .newest-audio ul li span:nth-of-type(2):hover{
+    padding-right: 10px;
+    color:#16169c;
+    cursor: pointer;
+}
+.information .newest-audio ul li span:first-of-type span{
+    font-size: 12px; 
+    position: relative;
+    top: 5px;
+}
+
+.information .menu{
+    padding: 40px;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.information .menu-statics{
+    margin-top: -18px;
+}
+.information .menu-statics ul li:not(:first-of-type){
+    overflow: hidden;
+    padding: 10px;
+    font-size: 21px;
+}
+.information .menu-statics ul li span:first-of-type{
+    font-weight: bold;
+}
+.information .menu a{
+    width: 100%;
+    text-decoration: none;
+    display: block;
+    color:white;
+}
+
+.videos .panel-body ul li video{
+    width:100%;
+    height: 150px;
+}
+
+
+
+.books .book , .articles .article{
+    padding: 10px;
+    box-shadow: 0px 0px 7px 1px;
+    margin-bottom: 10px;
+}
+.books .book img , .articles .article img{
+    width:100%;
+    height: 150px;
+}
+.books .book a , .articles .article a{
+    display: block;
+    cursor: pointer;
+}
+
+.issues .dataTable table tr:nth-child(even){
+    border-bottom: 2px solid #a493c1;
+}
+
+
+
+
+
+
+.login{
+    position: fixed;
+    top: 20%;
+    z-index: 9999999;
+    display: none;
+}
+.login .signIn{
+    box-shadow: 0px 0px 10px 2px;
+    padding: 20px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.login .signIn input[type="submit"]{
+    margin-left: 10px;
+}
+
+
+.footer{
+    background-color: black;
+}
+.footer p{
+    color:white;
+    margin-top: 5px;
+    font-size: 25px;
+}
+/*--------------------------------end of home page-----------------------------------------------------*/
+
+
+
+/*-------------------------------start of dashbord----------------------------------------------------*/
+.dashbord .fileContent{
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 10px;
+}
+.dashbord .fileContent a{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+.dashbord div:first-of-type .fileContent{
+    background-color: #967676;
+}
+.dashbord div:nth-of-type(2) .fileContent{
+    background-color: #56b356;
+}
+.dashbord div:nth-of-type(3) .fileContent{
+    background-color: #456371;
+}
+.dashbord div:nth-of-type(4) .fileContent{
+    background-color: brown;
+}
+.dashbord div:nth-of-type(5) .fileContent{
+    background-color:#3396a2;
+}
+.dashbord div:nth-of-type(6) .fileContent{
+    background-color: #924792;
+}
+.dashbord div:nth-of-type(7) .fileContent{
+    background-color: #9E9E9E;
+}
+.dashbord div:nth-of-type(8) .fileContent{
+    background-color: #795548;
+}
+.dashbord div:nth-of-type(9) .fileContent{
+    background-color: #de9d9d;
+}
+
+
+
+
+/*-------------------------------end of dashbord----------------------------------------------------*/
+
+
+
+
+/*-------------------------------start of users-------------------------------------------------------*/
+.users .usersData{
+    position: relative;
+}
+.users .usersData table .btn-danger{
+    margin-left: 10px;
+}
+.users .usersData video{
+    width: 50%;
+    height: 97px;
+}
+.users .usersData table tr{
+    word-break: break-all;
+}
+/*.users .usersData table tr td:nth-of-type(3){
+    width: 50%;
+}*/
+
+.users .usersData table tr td a{
+    display: block;
+    text-decoration: none;
+}
+.users .usersData table tr td a img{
+    width:100px;
+    height:100px;
+}
+.addAdmin{
+    display: none;
+    width: 60%;
+    margin: auto;
+    box-shadow: 0px 0px 10px 2px;
+    padding: 20px;
+    position: fixed;
+    left: 22%;
+    top: 20%;
+    z-index: 999999;
+    background-color: white;
+}
+.addAdmin form{
+    overflow: hidden;
+}
+.addAdmin form .btn-danger{
+    margin-right: 10px;
+}
+.addAdmin form .progress{
+    margin: 10px 0px;
+}
+.addAdmin form .progress .progress-bar-success{
+    height: 100%;
+    width:0%;
+}
+.addAdmin form .progress  span{
+    position: absolute;
+    left: 50%;
+    
+}
+
+
+
+/*------------------------------end of users----------------------------------------------------------*/
+
+
+/*-----------------------------start of viewMedia-----------------------------------------------------*/
+.viewData{
+    margin: 30px 0px;
+}
+.viewData .container div{
+    width: 50%;
+    margin-left: 25%;
+}
+.viewData .container div audio{
+    width: 100%;
+}
+.viewData .container div video{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.viewData .container  p{
+    font-size: 25px;
+}
+.viewData .container div a  img{
+    width: 60%;
+    height: 100px;
+    margin-left: 20%;
+}
+
+
+/*---------------------------------end of viewMedia----------------------------------------------*/
+
+/*---------------------------------start of viewAll----------------------------------------------*/
+.showGettingData{
+    padding: 20px;
+    overflow: hidden;
+}
+.showGettingData input{
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #337ab7;
+    margin-bottom: 15px;
+    box-shadow:none;
+    border-radius: 0px;
+    direction: rtl;
+}
+.showGettingData input:focus{
+    box-shadow:none
+}
+.showGettingData table{
+    direction: rtl;
+}
+
+.showGettingData .showInTable{
+    height: 500px;
+    overflow: auto;
+}
+
+
+
+
+
+
+/*---------------------------------end of viewAll----------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+/*-------------------------start of framwork----------------------------------------------------*/
+.spacing{
+    padding: 20px 0px;
+    overflow: hidden;
+}
+.iconImage{
+    font-size: 18px;
+    margin: 0px 13px;
+    position: relative;
+    top: 2px;
+}
+.menu-icon{
+    font-size: 50px;
+    color:white;
+}
+ul{
+    padding:0px !important;
+    width: 100% !important;
+}
+.table-responsive{
+    border: 1px solid #ccc;
+    
+}
+.imageBorder{
+    width: 45%;
+    margin-bottom: 15px;
+    margin-left: 29%;
+}
+a{
+    text-decoration: none;
+    transition: .5s all;
+    
+}
+
+/*----------------------------end of framwork---------------------------------------------------*/
